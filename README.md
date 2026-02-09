@@ -15,3 +15,9 @@ A Flask-based web application that simulates an early-stage transaction risk scr
 
 ## Status
 Prototype built for learning and demonstration purposes.
+
+## Screenshots
+
+![Welcome Page](Screenshot%202026-02-09%20224942.png)
+![Result Output 1](Screenshot%202026-02-09%20225019.png)
+![Result Output 2](Screenshot%202026-02-09%20225610.png)
