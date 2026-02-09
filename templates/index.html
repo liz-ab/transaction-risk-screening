@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Check</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a, #020617);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            width: 360px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #22c55e;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Transaction Analysis</h2>
+
+        <form method="POST">
+            <label>Transaction Amount</label>
+            <input type="number" name="amount" required>
+
+            <label>Transaction Time (0–23)</label>
+            <input type="number" name="time" required>
+
+            <label>Transactions in Last 60 Seconds</label>
+            <input type="number" name="txn_count" required>
+
+            <button type="submit">Analyze</button>
+        </form>
+
+        <div class="result">
+            {{ result }}
+        </div>
+    </div>
+
+</body>
+</html>
